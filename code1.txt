@@ -1,29 +1,46 @@
 #include <iostream>
 #include <string>
 using namespace std;
-class person{
-    public:
+
+class Person {
+public:
     string name;
     int age;
-    void introduce()
-    {
-        cout<<"hi my name is "<<name<<" my age is "<<age<<endl;
-    
-}
+
+    void introduce() {
+        cout << "Hi, my name is " << name << " and my age is " << age << "." << endl;
+    }
 };
+
+class Abstraction {
+private:
+    int a, b;
+
+public:
+    void set(int x, int y) {
+        a = x;
+        b = y;
+    }
+
+    void display() {
+        cout << "Values: a = " << a << ", b = " << b << endl;
+    }
+};
+
 int main() {
-    // Write C++ code here
-    person person1;
-    person1.name="alice";Adding a new feature line
------
-//Abstraction
-#include<iostream>
-using namespace std;
-class abstraction{
-    private:
-    int a,b;
-    public:
-    void set(int x,int y){
-        a=x;
-        b=y;
-Another change
+    // Create a Person object
+    Person person1;
+    person1.name = "A new feature line";
+    person1.age = 25;
+    person1.introduce();
+
+    // Demonstrate abstraction
+    Abstraction obj;
+    obj.set(10, 20);
+    obj.display();
+
+    cout << "Another change" << endl;
+    cout << "Feature branch line" << endl;
+
+    return 0;
+}
