@@ -14,4 +14,15 @@ class person{
 int main() {
     // Write C++ code here
     person person1;
-    person1.name="alice";
+    person1.name="alice";Adding a new feature line
+-----
+//Abstraction
+#include<iostream>
+using namespace std;
+class abstraction{
+    private:
+    int a,b;
+    public:
+    void set(int x,int y){
+        a=x;
+        b=y;
