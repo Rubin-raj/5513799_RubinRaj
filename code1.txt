@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class person{
+    public:
+    string name;
+    int age;
+    void introduce()
+    {
+        cout<<"hi my name is "<<name<<" my age is "<<age<<endl;
+    
+}
+};
+int main() {
+    // Write C++ code here
+    person person1;
+    person1.name="alice";
