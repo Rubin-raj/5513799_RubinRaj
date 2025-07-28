@@ -1,1 +1,6 @@
 Feature branch line
+int main(){
+    geeks obj;
+    obj.func(7);
+    obj.func(3.145);
+    obj.func(2,3);
